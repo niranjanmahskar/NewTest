@@ -13,7 +13,6 @@ pipeline
         stage ("Hello Jenkin")
         {
             steps {echo 'Hello Jenkins'}
-            steps {echo 'Good'}
         }
 
     }
