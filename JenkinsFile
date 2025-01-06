@@ -4,10 +4,10 @@ pipeline
     agent any        // This pipeline will run on any available agent
     stages
      
-          
+     {     
      stage ("Deploy to Dev")
     {
         steps {sshagent(['deply-to-tomcat'])}
         {
       sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@172.31.17.79:/usr/share/tomcat/webapps'
-      }}}
+      }}}}
