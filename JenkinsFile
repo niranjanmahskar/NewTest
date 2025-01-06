@@ -9,5 +9,5 @@ pipeline
     {
         steps {sshagent(['deply-to-tomcat'])}
         {
-      sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@172.31.17.79:/usr/share/tomcat/webapps'
+      sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@47.129.4.16:/usr/share/tomcat/webapps'
       }}}}
